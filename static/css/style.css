@@ -2,18 +2,74 @@ body {
  position: relative;
  font-size: 16px;
  background-color: black;
+ padding: 0;
+ margin: 0;
 }
 
+nav ul {
+        list-style: none;
+        font-size: 1em;
+    background-color: #202020;
+    color: beige;
+    text-align: right;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block; 
+    margin: 1%;
+   line-height: 10px;
+   font-family: oswald;
+text-transform: uppercase;
+text-align: center;
+}
+
+nav li a {
+    color:beige;
+}
+nav li a:hover {
+    text-decoration: none;
+   color:rgb(243, 95, 9);
+}
+
+section {
+    height: 300px;
+    overflow: hidden;
+}
 .section1 {
- background-color: black;
+ background-image: url("/images/blackrain.jpg");
+            width: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+color:aqua;
 }
 
 .section2 {
- background-color: red;
+
 }
 
 .section3 {
- background-color: blue;
+ background-image: url("/blackrain.jpg");
+}
+
+.section4 {
+margin: auto;
+height: 300px;
+background-image: url("/images/charts.jpg");
+}
+
+.section4 div {
+    color:honeydew;
+    float: left;
+    width: 19%;
+    height: 100vh;
+    background-color: rgba(0,0,0, .8);
+    text-align: center;
+    margin: 5px 6px;
+}
+.section4-5 {
+    float: right;
 }
 
 .data-buttons img {
@@ -99,4 +155,53 @@ img:hover {opacity: 0.6;}
 table.buttons {
  table-layout: inherit;
  width: 100%;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+              /* Footer height */
+}
+footer ul {
+    list-style: none;
+    font-size: 1em;
+background-color: #1b1b1b;
+color: beige;
+text-align: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-left: 25px;
+line-height: 5px;
+font-family: oswald;
+text-transform: uppercase;
+text-align: center;
+}
+
+footer li a {
+    color:beige;
+}
+footer li a:hover {
+    text-decoration: none;
+    color:rgb(146, 144, 144)
+}
+footer li i:hover{
+    color:rgb(243, 95, 9);
+}
+
+@media screen and (max-width: 1216px){
+    .section4 div {
+        width: 19%;
+        clear: both;
+        display: inline-block;
+        border-style: solid;
+        border-bottom-color: #ffffff
+        border-bottom-width: 2px;
+        padding: 0px;
+
+    }
 }

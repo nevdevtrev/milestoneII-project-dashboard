@@ -4,7 +4,7 @@
 body {
  position: relative;
  font-size: 16px;
- background-color: black;
+ background-color: rgb(0, 0, 0);
  padding: 0;
  margin: 0;
 }
@@ -75,6 +75,40 @@ nav li a:hover {
     -ms-transform: rotate(-20deg); /* IE 9 */
     transform: rotate(-20deg); /* Standard syntax */
 
+}
+
+
+.charts {
+    /* background:#1a1919; */
+}
+.dc-chart .axis path {
+    stroke: #c7c8c8;
+    fill: none;
+}
+.dc-chart g.tick text {
+    fill: white;
+}
+.dc-chart g.dc-legend-item text {
+    fill: white;
+}
+.dc-chart g.tick {
+    transform: translate(650, 0);
+}
+.charts div {
+}
+
+.section1 {
+    height: 300px;
+    width: 100%;
+    padding: 5% 1%;
+    color:#d1d2d4;
+}
+/* .section1 div svg {
+    height: 70px;
+    width: auto;
+} */
+.section1 div:hover {
+    transform: scale(1.1);
 }
 .section2 {
 margin: 0 auto;
@@ -168,6 +202,11 @@ background-color:rgb(0, 0, 0);
     -ms-transform: rotate(-20deg); 
     transform: rotate(-20deg); 
 color:honeydew;
+}
+
+.section5 {
+    height: 500px;
+    width: 100%;
 }
 #section6 {
     height: 24px;
@@ -278,12 +317,6 @@ footer li i:hover{
     color:rgb(243, 95, 9);
 }
 
-
-.section5 #show_cpe_type_by_volume .charts{
-    height: 100px;
-    width: auto;
-    background-color:#4e4e50;
-}
 
 /*@media screen and (max-width: 1216px){
     .section4 div {

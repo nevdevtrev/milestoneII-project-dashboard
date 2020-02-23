@@ -9,6 +9,8 @@ body {
  margin: 0;
 }
 
+
+
 nav {
 position: fixed;
 top: 0;
@@ -88,28 +90,46 @@ nav li a:hover {
 .dc-chart g.tick text {
     fill: white;
 }
+.dc-chart .x.axis text{
+    transform: rotate(20deg);
+    transform-origin: 0% 25%;
+    text-anchor:middle;
+}
+
 .dc-chart g.dc-legend-item text {
     fill: white;
 }
 .dc-chart g.tick {
     transform: translate(650, 0);
 }
-.charts div {
+
+.section1, .section4 {
+    height: 250px;
+    width: 100%;
+    padding: 10% 0%;
+    color:#d1d2d4;
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    text-align: left;
 }
 
-.section1 {
-    height: 300px;
-    width: 100%;
-    padding: 5% 1%;
-    color:#d1d2d4;
+.section1 div {
+     display: inline-block;
+     height: 400px;
+     width: 30%;
+     transform: scale(0.75);   
+     margin: 0 15px;
 }
-/* .section1 div svg {
-    height: 70px;
-    width: auto;
+/*
+.section1 div > .sec1-1 {
+    width:60%;
+}
+.section1 div > .sec1-2 {
+    width: 25%;
+}*/
+/* .section1 div:hover {
+    transform: scale(0.9);
 } */
-.section1 div:hover {
-    transform: scale(1.1);
-}
 .section2 {
 margin: 0 auto;
 width: 100%;
@@ -144,7 +164,7 @@ background-color:rgb(0, 0, 0);
 
 .section2 div:hover {
     box-shadow: 10px 8px 12px 0px #e9ecef;
-    transform: scale(1.5);
+    transform: scale(1.2);
     -webkit-transition: .4s ease-in-out;              /* increasing div size over .8 seconds */
     -moz-transition: .4s ease-in-out;
     -o-transition: .4s ease-in-out;
@@ -176,14 +196,15 @@ background-color:rgb(0, 0, 0);
      box-shadow: 0px 0px 0px 0px #0f0f0f,  1px 0px 0px 0px #e9ecef3a;
      }
 }
-.section3 { 
-         height: 300px;
- background-color:rgb(0, 0, 0);
- text-align: center;
- padding: 10% 20%;
+.section4 { 
+    height: 300px;
+    width: 100%;
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 10% 20%;
 }
 
-.section3 div {
+.section4 div {
     display:inline-block;
     width: 50%;
     height: 25px;
@@ -304,17 +325,19 @@ line-height: 5px;
 font-family: oswald;
 text-transform: uppercase;
 text-align: center;
+font-size:24px;
 }
 
-footer li a {
-    color:beige;
+footer li i {
+    color:rgb(110, 110, 108);
+        
 }
 footer li a:hover {
     text-decoration: none;
     color:rgb(146, 144, 144)
 }
 footer li i:hover{
-    color:rgb(243, 95, 9);
+    color:rgb(255, 255, 255);
 }
 
 

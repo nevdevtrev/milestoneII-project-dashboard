@@ -30,7 +30,7 @@ function show_cpes_per_person(ndx) {
 
     dc.barChart("#cpes_per_person_chart")
         .width(600)
-        .height(400)
+        .height(350)
         .dimension(dim)
         .group(group)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
@@ -49,7 +49,7 @@ function show_cpes_per_region(ndx) {
 
     dc.barChart("#show_cpes_per_region")
         .width(600)
-        .height(400)
+        .height(350)
         .dimension(dim)
         .group(group)
         .margins({ top: 10, right: 50, bottom: 30, left: 50 })
@@ -126,8 +126,8 @@ function show_per_month_volumes_composite(ndx) {
 
 
  compositeChart
-            .width(990)
-            .height(200)
+            .width(600)
+            .height(350)
             .dimension(dim)
             .x(d3.time.scale().domain([minDate, maxDate]))
             .yAxisLabel("CPEs")

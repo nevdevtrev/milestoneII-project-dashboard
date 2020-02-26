@@ -19,9 +19,9 @@ left: 25%;
 
 }
 nav ul {
-        list-style: none;
-        font-size: 2em;
-    background-color: rgba(0.0.0.0.8);
+    list-style: none;
+    font-size: 2em;
+    background-color: rgba(0.0.0.1);
     color: beige;
     text-align: center;
     margin: 0;
@@ -87,16 +87,18 @@ nav li a:hover {
     stroke: #c7c8c8;
     fill: none;
 }
-.dc-chart g.tick text {
+.dc-chart g.tick text {               /* modified axis line to white */
     fill: white;
 }
-.dc-chart .x.axis text{
-    transform: rotate(20deg);
+.dc-chart .x.axis text{               /* modifying the charts x-axis labelling*/
+    transform: rotate(18deg);
     transform-origin: 0% 25%;
-    text-anchor:middle;
+    text-anchor: end;
+    font-size: 11px;
+    font-weight: 200;
 }
 
-.dc-chart g.dc-legend-item text {
+.dc-chart g.dc-legend-item text {     /* change chart legend text to white */
     fill: white;
 }
 .dc-chart g.tick {
@@ -104,22 +106,25 @@ nav li a:hover {
 }
 
 .section1, .section4 {
-    height: 250px;
+    height: 400px;
     width: 100%;
-    padding: 10% 0%;
+    padding: 2% 0%;
     color:#d1d2d4;
     font-family: 'Amatic SC', cursive;
     font-size: 32px;
-    text-align: left;
+    text-align: center;
+    margin: 0px 0px 0px -43px;
 }
 
 .section1 div {
      display: inline-block;
      height: 400px;
      width: 30%;
-     transform: scale(0.75);   
+     transform: scale(0.81);   
      margin: 0 15px;
 }
+
+
 /*
 .section1 div > .sec1-1 {
     width:60%;
@@ -134,7 +139,7 @@ nav li a:hover {
 margin: 0 auto;
 width: 100%;
 height: 332px;
-padding: 10% 0px;
+padding: 1% 0px;
 text-align: center;
 background-color:rgb(0, 0, 0);
 }
